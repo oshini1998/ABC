@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3DEDC06F-6FB7-4D21-BBCD-51C3E27ABDBF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ABC</RootNamespace>
+    <AssemblyName>ABC</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddBuildings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddBuildings.Designer.cs">
+      <DependentUpon>AddBuildings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddLecturer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddLecturer.Designer.cs">
+      <DependentUpon>AddLecturer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddLocations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddLocations.Designer.cs">
+      <DependentUpon>AddLocations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddRooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddRooms.Designer.cs">
+      <DependentUpon>AddRooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddSession.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSession.Designer.cs">
+      <DependentUpon>AddSession.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddStudentGroups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddStudentGroups.Designer.cs">
+      <DependentUpon>AddStudentGroups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddSubjects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSubjects.Designer.cs">
+      <DependentUpon>AddSubjects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddTag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTag.Designer.cs">
+      <DependentUpon>AddTag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllocateRoomsForSessions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllocateRoomsForSessions.Designer.cs">
+      <DependentUpon>AllocateRoomsForSessions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectorClass.cs" />
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="database_firewall_rules.cs" />
+    <Compile Include="Locations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Locations.Designer.cs">
+      <DependentUpon>Locations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageBuildings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageBuildings.Designer.cs">
+      <DependentUpon>ManageBuildings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manageLocations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manageLocations.Designer.cs">
+      <DependentUpon>manageLocations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageSessionRooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageSessionRooms.Designer.cs">
+      <DependentUpon>ManageSessionRooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sessions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sessions.Designer.cs">
+      <DependentUpon>Sessions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageSessiosAndNotAvailable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageSessiosAndNotAvailable.Designer.cs">
+      <DependentUpon>ManageSessiosAndNotAvailable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NotAvailable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NotAvailable.Designer.cs">
+      <DependentUpon>NotAvailable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistics.Designer.cs">
+      <DependentUpon>Statistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimeTableDbDataSet.cs">
+      <DependentUpon>TimeTableDbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TimeTableDbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimeTableDbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ViewManageSessions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewManageSessions.Designer.cs">
+      <DependentUpon>ViewManageSessions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingDaysHours.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingDaysHours.Designer.cs">
+      <DependentUpon>WorkingDaysHours.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddBuildings.resx">
+      <DependentUpon>AddBuildings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddLecturer.resx">
+      <DependentUpon>AddLecturer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddLocations.resx">
+      <DependentUpon>AddLocations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddRooms.resx">
+      <DependentUpon>AddRooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSession.resx">
+      <DependentUpon>AddSession.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddStudentGroups.resx">
+      <DependentUpon>AddStudentGroups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSubjects.resx">
+      <DependentUpon>AddSubjects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddTag.resx">
+      <DependentUpon>AddTag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllocateRoomsForSessions.resx">
+      <DependentUpon>AllocateRoomsForSessions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Locations.resx">
+      <DependentUpon>Locations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageBuildings.resx">
+      <DependentUpon>ManageBuildings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manageLocations.resx">
+      <DependentUpon>manageLocations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageSessionRooms.resx">
+      <DependentUpon>ManageSessionRooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Sessions.resx">
+      <DependentUpon>Sessions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageSessiosAndNotAvailable.resx">
+      <DependentUpon>ManageSessiosAndNotAvailable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotAvailable.resx">
+      <DependentUpon>NotAvailable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics.resx">
+      <DependentUpon>Statistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewManageSessions.resx">
+      <DependentUpon>ViewManageSessions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingDaysHours.resx">
+      <DependentUpon>WorkingDaysHours.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="TimeTableDbDataSet.xsc">
+      <DependentUpon>TimeTableDbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TimeTableDbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TimeTableDbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TimeTableDbDataSet.xss">
+      <DependentUpon>TimeTableDbDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
